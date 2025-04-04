@@ -1,7 +1,7 @@
 package com.chuwa.calculator;
 
 import com.chuwa.calculator.model.Operation;
-import com.chuwa.calculator.service.Calculator;
+import com.chuwa.calculator.service.impl.Calculator;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.beans.factory.annotation.Autowired;
