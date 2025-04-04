@@ -1,13 +1,14 @@
 package com.chuwa.calculator.service;
 
 import com.chuwa.calculator.model.Operation;
-import com.chuwa.calculator.service.impl.Calculator;
+
+import java.math.BigDecimal;
 
 public class Chain {
     private final Calculator calculator; // Reference to the parent Calculator
-    private double currentValue;
+    private BigDecimal currentValue;
 
-    public Chain(Calculator calculator, double initialValue) {
+    public Chain(Calculator calculator, BigDecimal initialValue) {
         this.calculator = calculator;
         this.currentValue = initialValue;
     }
@@ -17,7 +18,7 @@ public class Chain {
         currentValue = calculator.calculate(op, currentValue, operand);
         return this;
     }
-    public double getResult() {
+    public BigDecimal getResult() {
         return currentValue;
     }
 }

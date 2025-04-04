@@ -1,5 +1,7 @@
 package com.chuwa.calculator.strategy;
 
+import java.math.BigDecimal;
+
 public interface OperationStrategy {
-    double apply(double a, double b);
+    BigDecimal apply(BigDecimal a, BigDecimal b);
 }
